@@ -67,7 +67,7 @@
     "start-js": "node scripts/start.js",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && node scripts/build.js",
-    "test": "npm run build-css && node scripts/test.js --env=jsdom --verbose",
+    "test": "jest /src",
     "lint": "eslint src/*"
   },
   "jest": {
