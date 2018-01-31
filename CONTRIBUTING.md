@@ -55,7 +55,7 @@ A valid contribution should:
 
 * not broke the existing tests
 * accompain a component test for every new react component
-* accompain a reducer and action
+* accompain a reducer and action test if added
 * pass the linting rule of the `.eslint.rc`
 
 Please rebase and resolve all conflicts before submitting.
