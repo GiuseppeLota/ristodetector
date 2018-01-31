@@ -58,7 +58,9 @@ test('handle the fetchBusinessesSuccess action', () => {
     image_url: "IMAGE_URL",
     id: "ID",
     phone: "PHONE_NUM",
-    categories: [{title: 'TITLE'}]
+    location: {
+      display_address: []
+    }
   }];
 
   const newState = reducer(initialState, testing.fetchBusinessesSuccess(data));
@@ -67,7 +69,7 @@ test('handle the fetchBusinessesSuccess action', () => {
     imageUrl: "IMAGE_URL",
     id: "ID",
     phone: "PHONE_NUM",
-    categories: [{title: 'TITLE'}]
+    address: []
   }]);
   expect(newState.loaded).toEqual(true);
 });
