@@ -21,23 +21,6 @@ npm install
 ```
 
 
-### Running Tests
-
-```bash
-# run tests on whatever version of React is currently installed
-npm test
-```
-
-```bash
-# run tests on all supported versions of React
-npm run test:all
-```
-
-```bash
-# faster feedback for TDD
-npm run test:watch
-```
-
 ### Style & Linting
 
 For linting this codebase is used [ESLint](http://eslint.org/).
