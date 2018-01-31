@@ -1,15 +1,15 @@
 .search-item {
   width: 30%;
   height: 140px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 10px auto;
   display: flex; }
 
 .infos {
   width: 100%;
-  background-color: #e6e4e4; }
+  background-color: #f1f1f1; }
 
 .card-image {
   background-size: contain;
