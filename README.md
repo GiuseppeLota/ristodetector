@@ -6,7 +6,7 @@
 
 A didactic webapp for learning the base concept of react and redux.
 
-Type a valid place and consult a list of the most known restaurant that include:
+Type a valid place and consult a list of his most known restaurant that includes:
  * name
  * image
  * phone number
