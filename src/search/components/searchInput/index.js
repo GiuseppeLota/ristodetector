@@ -30,7 +30,7 @@ class SearchInput extends React.Component {
           value={this.state.value}
           onChange={this.handleChange.bind(this)} id='search-text-input'
           placeholder="Insert your location"
-          className={this.state.errorNoValue ? "error-no-value" : ""} />
+          className={this.state.errorNoValue ? "error-no-value" : ""}/>
         <div id='button-holder' onClick={this.handleSearch.bind(this)}>
           <img src="/search-icon_32x.png" alt="search-icon"/>
         </div>

@@ -4,11 +4,17 @@ import './SearchItem.css';
 
 const SearchItem = (props) => (
   <div className="search-item">
-    <img src={props.business.imageUrl} alt={props.business.name}/>
-    <div>{props.business.name}</div>
-    <div>Phone: {props.business.phone && " - "}</div>
-    <div>
-      Categories: {props.business.categories.map(cat => <div key={cat.title}>{cat.title}</div>)}
+    <div className="card-image" style={{backgroundImage: 'url(' + props.business.imageUrl + ')'}}/>
+    <div className="infos">
+      <div className="business-name">{props.business.name}</div>
+      <div className="details">
+        <div className="phone">Phone: {props.business.phone && " - "}</div>
+        <div className="address">
+          {props.business.address.map(addressPart => {
+            return (<div className="address-part" key={addressPart}>{addressPart}</div>);
+          })}
+        </div>
+      </div>
     </div>
   </div>
 );

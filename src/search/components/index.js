@@ -11,7 +11,7 @@ const SearchPage = (props) =>
     <div className="search">
       <h2>Businesses:</h2>
       <SearchInput searchFn={props.fetchBusinesses}/>
-      <SearchResult businesses={props.businesses}/>
+      <SearchResult businesses={props.businesses} />
     </div>
   );
 

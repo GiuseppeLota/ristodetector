@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action = {}) {
         name: el.name,
         phone: el.phone,
         imageUrl: el.image_url,
-        categories: el.categories,
+        address: el.location.display_address,
         id: el.id
       })),
       loaded: true,

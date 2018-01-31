@@ -1,5 +1,8 @@
 'use strict';
 
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
 if (typeof Promise === 'undefined') {
   // Rejection tracking prevents a common issue where React gets into an
   // inconsistent state due to an error, but it gets swallowed by a Promise,
@@ -19,4 +22,5 @@ Object.assign = require('object-assign');
 if (process.env.NODE_ENV === 'test') {
   require('raf').polyfill(global);
   global.fetch = require('jest-fetch-mock');
+  Enzyme.configure({ adapter: new Adapter() });
 }
